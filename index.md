@@ -67,28 +67,20 @@ By asking Chatgpt the prompt: "For the command-line "find", give 4 alternate way
 **The output from Chatgpt with my own words:**
 
 * Basic File Search:
+
 ```
 find /path/to/search -name "filename"
 ```
+
 **Two examples of input/output:**
+
 ```
 zijieqiu@Zijies-MacBook-Pro docsearch % find technical/911report -name "chapter-1.txt"
 technical/911report/chapter-1.txt
 zijieqiu@Zijies-MacBook-Pro docsearch % find technical/911report -name "*.txt"        
 technical/911report/chapter-13.4.txt
 technical/911report/chapter-13.5.txt
-technical/911report/chapter-13.1.txt
-technical/911report/chapter-13.2.txt
-technical/911report/chapter-13.3.txt
-technical/911report/chapter-3.txt
-technical/911report/chapter-2.txt
-technical/911report/chapter-1.txt
-technical/911report/chapter-5.txt
-technical/911report/chapter-6.txt
-technical/911report/chapter-7.txt
-technical/911report/chapter-9.txt
-technical/911report/chapter-8.txt
-technical/911report/preface.txt
+...
 technical/911report/chapter-12.txt
 technical/911report/chapter-10.txt
 technical/911report/chapter-11.txt
@@ -98,11 +90,13 @@ and its subdirectories. It's useful for quickly locating a particular file when 
 ```
 
 * Searching for Files/Directories:
+  
 ```
 find /path/to/search -type f -name "*.txt"
 ```
 
 **Two examples of input/output:**
+
 ```
 zijieqiu@Zijies-MacBook-Pro docsearch % find technical/911report -type f -name "*.txt"
 technical/911report/chapter-13.4.txt
@@ -110,14 +104,7 @@ technical/911report/chapter-13.5.txt
 technical/911report/chapter-13.1.txt
 technical/911report/chapter-13.2.txt
 technical/911report/chapter-13.3.txt
-technical/911report/chapter-3.txt
-technical/911report/chapter-2.txt
-technical/911report/chapter-1.txt
-technical/911report/chapter-5.txt
-technical/911report/chapter-6.txt
-technical/911report/chapter-7.txt
-technical/911report/chapter-9.txt
-technical/911report/chapter-8.txt
+...
 technical/911report/preface.txt
 technical/911report/chapter-12.txt
 technical/911report/chapter-10.txt
@@ -131,11 +118,14 @@ and processing specific file types. It could also be used to find the directorie
 ```
 
 * Searching for Files by Modification Time (mtime):
+
+  
 ```
 find /path/to/search -mtime -7
 ```
 
 **Two examples of input/output:**
+
 ```
 zijieqiu@Zijies-MacBook-Pro Cse 15L % find docsearch -mtime -1
 docsearch
@@ -157,27 +147,21 @@ This can be helpful for tasks like locating recently edited files for backup or 
 ```
 
 * Searching for Files by Size (size):
+
+
 ```
 find /path/to/search -size +10M
 ```
 
 **Two examples of input/output:**
+
 ```
 zijieqiu@Zijies-MacBook-Pro Cse 15L % find docsearch/technical/911report -size +0M
 docsearch/technical/911report
 docsearch/technical/911report/chapter-13.4.txt
 docsearch/technical/911report/chapter-13.5.txt
 docsearch/technical/911report/chapter-13.1.txt
-docsearch/technical/911report/chapter-13.2.txt
-docsearch/technical/911report/chapter-13.3.txt
-docsearch/technical/911report/chapter-3.txt
-docsearch/technical/911report/chapter-2.txt
-docsearch/technical/911report/chapter-1.txt
-docsearch/technical/911report/chapter-5.txt
-docsearch/technical/911report/chapter-6.txt
-docsearch/technical/911report/chapter-7.txt
-docsearch/technical/911report/chapter-9.txt
-docsearch/technical/911report/chapter-8.txt
+...
 docsearch/technical/911report/preface.txt
 docsearch/technical/911report/chapter-12.txt
 docsearch/technical/911report/chapter-10.txt

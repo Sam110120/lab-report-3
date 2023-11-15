@@ -84,10 +84,11 @@ By asking Chatgpt the prompt: "For the command-line "find", give 4 alternate way
   technical/911report/chapter-12.txt
   technical/911report/chapter-10.txt
   technical/911report/chapter-11.txt
-  
-  This command searches for a specific file named "filename" within the directory specified by /path/to/search
-  and its subdirectories. It's useful for quickly locating a particular file when you know its name.
 ```
+* The code from the example above is taken directly from the week 5 lab.
+  * [Github Link](https://github.com/ucsd-cse15l-s23/docsearch)
+
+**This command searches for a specific file named "filename" within the directory specified by /path/to/search and its subdirectories. It's useful for quickly locating a particular file when you know its name.**
 
 * Searching for Files/Directories:
   
@@ -111,11 +112,13 @@ By asking Chatgpt the prompt: "For the command-line "find", give 4 alternate way
   technical/911report/chapter-11.txt
   zijieqiu@Zijies-MacBook-Pro docsearch % find technical/ -type d -name "biomed"
   technical//biomed
-  
-  This command searches for files with the ".txt" extension within the specified directory and its
-  subdirectories. It's helpful for locating files by their extension, which can be useful for filtering
-  and processing specific file types. It could also be used to find the directories.
 ```
+* The code from the example above is taken directly from the week 5 lab.
+  * [Github Link](https://github.com/ucsd-cse15l-s23/docsearch)
+
+**This command searches for files with the ".txt" extension within the specified directory and its
+  subdirectories. It's helpful for locating files by their extension, which can be useful for filtering
+  and processing specific file types. It could also be used to find the directories.**
 
 * Searching for Files by Modification Time (mtime):
 
@@ -140,10 +143,12 @@ By asking Chatgpt the prompt: "For the command-line "find", give 4 alternate way
   docsearch/technical/911report/chapter-12.txt
   docsearch/technical/911report/chapter-10.txt
   docsearch/technical/911report/chapter-11.txt
-  
-  The -mtime option is useful when you want to search for files that have been modified within a specific timeframe.
-  This can be helpful for tasks like locating recently edited files for backup or cleanup purposes.
 ```
+* The code from the example above is taken directly from the week 5 lab.
+  * [Github Link](https://github.com/ucsd-cse15l-s23/docsearch)
+
+**The -mtime option is useful when you want to search for files that have been modified within a specific timeframe.
+  This can be helpful for tasks like locating recently edited files for backup or cleanup purposes.**
 
 * Searching for Files by Size (size):
 
@@ -176,7 +181,9 @@ By asking Chatgpt the prompt: "For the command-line "find", give 4 alternate way
   docsearch/technical/911report/chapter-12.txt
   docsearch/technical/911report/chapter-10.txt
   docsearch/technical/911report/chapter-11.txt
-  
-  The -size option is valuable for finding files of a particular size, which is useful for managing disk space,
-  especially when you need to identify and potentially remove large or small files that are consuming space.
 ```
+* The code from the example above is taken directly from the week 5 lab.
+  * [Github Link](https://github.com/ucsd-cse15l-s23/docsearch)
+
+**The -size option is valuable for finding files of a particular size, which is useful for managing disk space,
+  especially when you need to identify and potentially remove large or small files that are consuming space.**
